@@ -17,7 +17,7 @@ const Header = () => {
         </div>
         <div className={`p-5 ${darkMode ? 'text-light' : 'text-oxfordBlue'} text-sm transition delay-300 duration-300 ease-in-out`}>
             <ul className='flex'>
-                <li className='lg:mr-5 hover:text-forestGreen'><Link to="/">Home</Link></li>
+                <li className='lg:mr-5 md:mr-5 hover:text-forestGreen'><Link to="/">Home</Link></li>
                 <li className='lg:mr-5 hover:text-forestGreen'><Link to="#">About</Link></li>
                 <li className='lg:mr-5 hover:text-forestGreen'><Link to="/products">Products</Link></li>
                 <li className=''><Link to="#">How it works</Link></li>
