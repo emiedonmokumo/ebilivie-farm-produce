@@ -48,12 +48,13 @@ const Order = () => {
                 email: '',
                 address: '',
             })
+            alert('Order Successfully Placed... Thank you for you patronage.')
         } catch (error) {
             console.log(error.message)
         }
     }
   return (
-    <div className="lg:px-36 mb-16 ">
+    <div className="mb-16 ">
         <div className="flex justify-between sm:flex-col-reverse sm:justify-center">
             <form onSubmit={handleSubmit} className="flex flex-col lg:w-2/3 md:w-2/3">
                 <div className="flex flex-col my-2">
@@ -79,7 +80,7 @@ const Order = () => {
                 <li className="mt-5">{orderItem[0].description}</li>
                 <li className="my-5">{orderItem[0].size} Litres</li>
                 <h3 className="text-2xl font-semibold">Discount: {orderItem[0].discount}%</h3>
-                <h1 className="text-3xl font-bold mt-12 md:text-xl sm:text-lg">Placing order: ₦{orderItem[0].price}</h1>
+                <h1 className="text-3xl font-bold mt-12 md:text-xl sm:text-lg">Placing order: ₦{orderItem[0].price*orderItem[0].discount/100}</h1>
             </div>
         </div>
     </div>

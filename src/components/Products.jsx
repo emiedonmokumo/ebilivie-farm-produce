@@ -12,7 +12,7 @@ const Products = () => {
       <h1 className={`text-center text-2xl font-bold mb-12`}>Palm Oil Products</h1>
       <div className="flex flex-wrap justify-center my-16">
         <img src="/images/istockphoto-539201186-612x612.jpg" className="lg:w-80 md:w-48 rounded-xl" alt="" />
-        <img src="/images/istockphoto-539201434-612x612.jpg" className="lg:w-80 md:w-48 rounded-xl mx-5 sm:my-5" alt="" />
+        <img src="/images/istockphoto-539201434-612x612.jpg" className="lg:w-80 md:w-48 rounded-xl mx-5 sm:my-5 lg:my-5" alt="" />
         <img src="/images/istockphoto-649691472-612x612.jpg" className="lg:w-80 md:w-48 rounded-xl md:m-5" alt="" />
       </div>
       <div className="flex justify-between md:flex-col sm:flex-col mb-12">
