@@ -53,9 +53,9 @@ const Order = () => {
         }
     }
   return (
-    <div className="container mx-auto p-5 px-36 mb-16 ">
-        <div className="flex justify-between">
-            <form onSubmit={handleSubmit} className="flex flex-col w-2/3">
+    <div className="lg:px-36 mb-16 ">
+        <div className="flex justify-between sm:flex-col-reverse sm:justify-center">
+            <form onSubmit={handleSubmit} className="flex flex-col lg:w-2/3 md:w-2/3">
                 <div className="flex flex-col my-2">
                     <label htmlFor="" className="text-lightGray mb-3">Name/Business Name</label>
                     <input className={`border-lightGray rounded-lg border p-2 text-oxfordBlue`} type="text" placeholder='John Doe/ John Doe Enterprise' value={info.name} onChange={(e)=>setInfo({...info, name: e.target.value})}/>
@@ -72,14 +72,14 @@ const Order = () => {
                     <label htmlFor="" className="text-lightGray mb-3">Contact Address</label>
                     <input className={`border-lightGray rounded-lg border p-2 text-oxfordBlue`} type="text" placeholder="24 Inec Road, Kpansia, Yenagoa, Bayelsa State" value={info.address} onChange={(e)=>setInfo({...info, address: e.target.value})}/>
                 </div>
-                <button type="submit" className="bg-forestGreen text-light mt-5 rounded-lg py-5 hover:bg-lightGreen" disabled={disable}>Place Order</button>
+                <button type="submit" className="bg-forestGreen text-light mt-5 rounded-lg py-5 hover:bg-lightGreen sm:py-3 sm:text-sm" disabled={disable}>Place Order</button>
             </form>
-            <div className={`${darkMode ? 'border-forestGreen border text-light' : 'bg-semiLight'} p-5 px-10 rounded-lg ml-5 transition delay-300 duration-300 ease-in-out`}>
+            <div className={`${darkMode ? 'border-forestGreen border text-light' : 'bg-semiLight'} p-5 px-10 md:p-5 rounded-lg lg:ml-5 md:ml-10 sm:mb-5 transition delay-300 duration-300 ease-in-out`}>
                 <h1 className="mt-5 text-2xl font-semibold text-center">{orderItem[0].name}</h1>
                 <li className="mt-5">{orderItem[0].description}</li>
                 <li className="my-5">{orderItem[0].size} Litres</li>
                 <h3 className="text-2xl font-semibold">Discount: {orderItem[0].discount}%</h3>
-                <h1 className="text-3xl font-bold mt-12">Placing order: ₦{orderItem[0].price}</h1>
+                <h1 className="text-3xl font-bold mt-12 md:text-xl sm:text-lg">Placing order: ₦{orderItem[0].price}</h1>
             </div>
         </div>
     </div>

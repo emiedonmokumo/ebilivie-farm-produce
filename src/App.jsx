@@ -8,18 +8,20 @@ import Order from './components/Order';
 import Admin from './components/Admin';
 
 function App() {
-  
+
   return (
     <div className="App">
       <ModeProvider>
         <Router>
           <Header />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/products' element={<Products />} />
-            <Route path='/order/:id' element={<Order />} />
-            <Route path='/admin' element={<Admin />} />
-          </Routes>
+          <div className="container mx-auto p-5">
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/products' element={<Products />} />
+              <Route path='/order/:id' element={<Order />} />
+              <Route path='/admin' element={<Admin />} />
+            </Routes>
+          </div>
           <Footer />
         </Router>
       </ModeProvider>
