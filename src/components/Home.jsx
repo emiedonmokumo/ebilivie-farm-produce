@@ -87,7 +87,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-evenly mt-28 lg:px-16 md:flex-col sm:flex-col">
+            <div className="flex justify-evenly mt-28 sm:mt-5 lg:px-16 md:flex-col sm:flex-col">
                 <div className="lg:w-2/4 lg:mr-16 md:mb-5">
                     <div className="py-2 px-5 bg-semiLight rounded-xl">
                         <div className="relative">
@@ -96,18 +96,18 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-2/4">
-                    <h1 className="text-4xl font-bold">Your <span className="text-forestGreen">pathway</span> to Future Investment</h1>
-                    <p className={`my-8 text-sm ${darkMode ? 'text-lightGray' : 'text-oxfordBlue'} text-justify`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur </p>
-                    <p className={`text-sm text-oxfordBlue bg-semiLight p-3 rounded-lg mb-5 relative`}>What is FarmVest?<i className="absolute right-5 bi bi-chevron-down"></i></p>
-                    <p className={`text-sm text-oxfordBlue bg-semiLight p-3 rounded-lg mb-5 relative`}>How safe is FarmVest<i className="absolute right-5 bi bi-chevron-down"></i></p>
-                    <p className={`text-sm text-oxfordBlue bg-semiLight p-3 rounded-lg mb-5 relative`}>What do I gain from using FarmVest?<i className="absolute right-5 bi bi-chevron-down"></i></p>
+                <div className="lg:w-2/4 sm:mt-5">
+                    <h1 className="text-4xl font-bold sm:text-2xl">Your <span className="text-forestGreen">pathway</span> to Future Investment</h1>
+                    <p className={`my-8 sm:my-5 text-sm ${darkMode ? 'text-lightGray' : 'text-oxfordBlue'} text-justify`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur </p>
+                    <p className={`text-sm text-oxfordBlue bg-semiLight hover:text-forestGreen p-3 rounded-lg mb-5 relative`}>What is FarmVest?<i className="absolute right-5 bi bi-chevron-down"></i></p>
+                    <p className={`text-sm text-oxfordBlue bg-semiLight hover:text-forestGreen p-3 rounded-lg mb-5 relative`}>How safe is FarmVest<i className="absolute right-5 bi bi-chevron-down"></i></p>
+                    <p className={`text-sm text-oxfordBlue bg-semiLight hover:text-forestGreen p-3 rounded-lg mb-5 relative`}>What do I gain from using FarmVest?<i className="absolute right-5 bi bi-chevron-down"></i></p>
                 </div>
             </div>
             <div>
-                <div className="flex justify-around md:flex-col-reverse sm:flex-col-reverse mt-28 lg:px-16 items-center">
+                <div className="flex justify-around md:flex-col-reverse sm:flex-col-reverse mt-28 sm:mt-5 lg:px-16 items-center">
                     <div className="md:mt-10">
-                        <h1 className="text-5xl font-bold sm:text-3xl">Why Choose <span className="text-forestGreen">Ebilivie</span></h1>
+                        <h1 className="text-5xl md:text-4xl font-bold sm:text-2xl sm:mt-5">Why Choose <span className="text-forestGreen">Ebilivie</span></h1>
                         <p className="my-8 text-lg text-OxfordBlue text-justify sm:text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</p>
                         <div className="sm:text-xs">
                             <div className="flex items-center my-5 sm:my-3">
@@ -138,7 +138,7 @@ const Home = () => {
             </div>
             <div className="my-16">
                 <div>
-                    <h1 className="text-4xl font-bold text-center">What <span className="text-forestGreen">Customers</span> have to say</h1>
+                    <h1 className="text-4xl font-bold text-center sm:text-2xl">What <span className="text-forestGreen">Customers</span> have to say</h1>
                     <p className="my-8 text-sm text-OxfordBlue text-center lg:px-56">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</p>
                     <div className="flex md:flex-col sm:flex-col my-10">
                         <div className={`flex ${darkMode ? 'bg-OxfordBlue2' : 'bg-semiLight'} rounded-lg lg:mr-10 md:mb-10`}>
@@ -165,9 +165,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className={`${darkMode ? 'bg-OxfordBlue2' : 'bg-semiLight'} lg:mx-14 p-12 text-center rounded-xl`}>
+            <div className={`${darkMode ? 'bg-OxfordBlue2' : 'bg-semiLight'} lg:mx-14 p-12 sm:p-5 text-center rounded-xl`}>
                 <div className="">
-                    <h1 className="text-3xl font-bold md:text-xl">Get the best products from <span className="text-forestGreen">Ebilivie</span> Farm</h1>
+                    <h1 className="text-3xl font-bold md:text-xl sm:text-lg">Get the best products from <span className="text-forestGreen">Ebilivie</span> Farm</h1>
                     <div className="mt-7">
                         <Link to="/products" className='bg-forestGreen p-3 lg:px-8 text-semiLight rounded-lg md:text-sm sm:text-xs'>Buy Now</Link>
                     </div>

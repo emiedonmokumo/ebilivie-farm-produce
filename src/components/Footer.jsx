@@ -21,9 +21,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="lg:m-3 md:mt-5 flex flex-col md:flex-row md:items-center">
-            <div className=''>
-              <h5>Follow us</h5>
+          <div className="lg:m-3 md:mt-5 flex flex-col md:flex-row md:justify-between md:items-center">
+            <div className='sm:my-5'>
+              <h5 className='font-bold text-lg'>Follow us</h5>
               <div className='flex mt-3'>
                 <i className="bi bi-instagram text-semiLight p-2 px-3 rounded-full bg-forestGreen hover:bg-lightGreen"></i>
                 <i className="bi bi-facebook text-semiLight p-2 px-3 rounded-full mx-5 bg-forestGreen hover:bg-lightGreen"></i>
@@ -31,14 +31,16 @@ const Footer = () => {
               </div>
             </div>
             <div className='lg:mt-5'>
-              <h5 className='font-semibold'>Call on us</h5>
-              <p className='mt-3'>+2348109995607</p>
+              <h5 className='font-semibold text-lg'>Contact us</h5>
+              <p className='my-3'>08109995607</p>
+              <p>ebilviefarm@gmail.com</p>
             </div>
           </div>
         </div>
-        <hr className='lg:mt-20 md:mt-20 sm:mt-16' />
-        <div className='sm:mt-12 flex justify-between sm:flex-col'>
-          <div>
+      </div>
+      <hr className='lg:mt-20 md:mt-20 sm:mt-16' />
+        <div className='md:p-5 flex justify-between sm:flex-col-reverse sm:justify-center sm:items-center'>
+          <div className='sm:mt-5'>
             <p className='md:text-xs'>&copy; 2021 All Rights Reserved</p>
           </div>
           <div className='sm:mt-2'>
@@ -49,7 +51,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-      </div>
     </footer>
   )
 }
