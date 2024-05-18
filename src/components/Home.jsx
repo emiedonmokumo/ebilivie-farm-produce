@@ -143,19 +143,19 @@ const Home = () => {
                     <div className="flex md:flex-col sm:flex-col my-10">
                         <div className={`flex ${darkMode ? 'bg-OxfordBlue2' : 'bg-semiLight'} rounded-lg lg:mr-10 md:mb-10`}>
                             <div className="lg:w-1/3">
-                                <img src="/images/Rectangle 203.png" className="h-full md:w-96" alt="" />
+                                <img src="/images/Rectangle 203.png" className="lg:h-full md:w-96 sm:w-96" alt="" />
                             </div>
                             <div className="lg:w-2/3 lg:ml-5 p-2">
-                                <p className="text-sm text-OxfordBlue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</p>
+                                <p className="text-sm text-OxfordBlue sm:text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</p>
                                 <p className="pt-4 text-lg text-OxfordBlue font-semibold text-OxfordBlue2">Tonia Smart</p>
                             </div>
                         </div>
                         <div className={`flex ${darkMode ? 'bg-OxfordBlue2' : 'bg-semiLight'} rounded-lg sm:mt-5`}>
                             <div className="lg:w-1/3">
-                                <img src="/images/Rectangle 205.png" className="h-full md:w-96 sm:w-fit" alt="" />
+                                <img src="/images/Rectangle 205.png" className="lg:h-full md:w-96 sm:w-96" alt="" />
                             </div>
                             <div className="lg:w-2/3 lg:ml-5 p-2">
-                                <p className="text-sm text-OxfordBlue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</p>
+                                <p className="text-sm text-OxfordBlue sm:text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac</p>
                                 <p className="pt-4 text-lg text-OxfordBlue font-semibold text-OxfordBlue2">Grace Obi</p>
                             </div>
                         </div>

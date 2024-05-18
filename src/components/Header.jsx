@@ -44,10 +44,12 @@ const Header = () => {
             </div>
             {showMenu && (
                 <ul className='flex lg:hidden md:flex-col sm:flex-col text-right p-5'>
-                    <li className='hover:text-forestGreen'><Link onClick={()=> setShowMenu(!showMenu)} to="/">Home</Link></li>
-                    <li className='hover:text-forestGreen'><Link onClick={()=> setShowMenu(!showMenu)} to="#">About</Link></li>
-                    <li className='hover:text-forestGreen'><Link onClick={()=> setShowMenu(!showMenu)} to="/products">Products</Link></li>
+                    <li className='hover:text-forestGreen'><Link onClick={() => setShowMenu(!showMenu)} to="/">Home</Link></li>
+                    <li className='hover:text-forestGreen'><Link onClick={() => setShowMenu(!showMenu)} to="#">About</Link></li>
+                    <li className='hover:text-forestGreen'><Link onClick={() => setShowMenu(!showMenu)} to="/products">Products</Link></li>
                     <li className=''><Link to="#">How it works</Link></li>
+                    <li className='mt-2'><Link to="#" className='border-solid border border-lightGreen p-2 px-5 rounded-lg hover:bg-forestGreen hover:text-light md:p-2 md:px-5 md:rounded-lg sm:text-sm'>Get Started</Link></li>
+                    <li className='mt-5'><Link to="#" className='bg-forestGreen p-2 px-5 text-semiLight rounded-lg hover:bg-lightGreen md:p-2 md:px-5 md:rounded-lg sm:text-sm'>Contact us</Link></li>
                 </ul>)}
         </div>
     )
