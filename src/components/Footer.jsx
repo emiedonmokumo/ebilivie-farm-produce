@@ -6,7 +6,7 @@ const Footer = () => {
   const { darkMode } = useContext(ModeContext)
   return (
     <footer className={`${darkMode ? 'bg-OxfordBlue2 text-semiLight' : 'bg-semiLight text-oxfordBlue'} text-sm pt-12`}>
-      <div className='container mx-auto p-5'>
+      <div className='p-5 md:px-12'>
         <div className="flex justify-evenly md:flex-col lg:items-center sm:flex-col">
           <div className='lg:w-60 mr-12'>
             <h1 className='text-2xl font-semibold text-forestGreen'>Ebilivie Farm</h1>

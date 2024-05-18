@@ -73,7 +73,7 @@ const Order = () => {
                     <label htmlFor="" className="text-lightGray mb-3">Contact Address</label>
                     <input className={`border-lightGray rounded-lg border p-2 text-oxfordBlue`} type="text" placeholder="24 Inec Road, Kpansia, Yenagoa, Bayelsa State" value={info.address} onChange={(e)=>setInfo({...info, address: e.target.value})}/>
                 </div>
-                <button type="submit" className="bg-forestGreen text-light mt-5 rounded-lg py-5 hover:bg-lightGreen sm:py-3 sm:text-sm" disabled={disable}>Place Order</button>
+                <button type="submit" className="bg-forestGreen text-light mt-5 rounded-lg py-5 hover:bg-lightGreen sm:py-3 sm:text-sm" disabled={disable}>{disable ? 'Submitting...': 'Place Order'}</button>
             </form>
             <div className={`${darkMode ? 'border-forestGreen border text-light' : 'bg-semiLight'} p-5 px-10 md:p-5 rounded-lg lg:ml-5 md:ml-10 sm:mb-5 transition delay-300 duration-300 ease-in-out`}>
                 <h1 className="mt-5 text-2xl font-semibold text-center">{orderItem[0].name}</h1>
