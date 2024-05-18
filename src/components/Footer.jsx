@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className='lg:mt-20 md:mt-20 sm:mt-16' />
-        <div className='md:p-5 flex justify-between sm:flex-col-reverse sm:justify-center sm:items-center'>
+        <div className='lg:p-5 md:p-5 flex justify-between sm:flex-col-reverse sm:justify-center sm:items-center'>
           <div className='sm:mt-5'>
             <p className='md:text-xs'>&copy; 2021 All Rights Reserved</p>
           </div>
