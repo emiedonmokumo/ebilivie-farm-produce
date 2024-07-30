@@ -7,10 +7,10 @@ const Home = () => {
     return (
         <div className={`mt-16 font-spartan`}>
             <div className="">
-                <div className="lg:mx-40 text-center">
+                <div className="lg:mx-24 text-center">
                     <h1 className="text-5xl font-bold sm:text-4xl">The trusted and reliable place to <span className="text-forestGreen">Buy</span> Farm Produce</h1>
                     <div className={`my-8 text-lg ${darkMode ? 'text-lightGray' : 'text-oxfordBlue'} sm:text-sm`}>
-                        <p>Ebilivie farm is an online market place for customers to get wholesale price of agricultural produce such as palm oil, tubers and nuts. With Ebilvie Platform, products are delivered at the customers location and guarantees quick delivery</p>
+                        <p>Ebilivie farm is an online market place for customers to get wholesale price of agricultural produce such as palm oil, tubers and nuts. With ebilvie platform, products are delivered at the customers location and guarantees quick delivery</p>
                     </div>
                     <div className="">
                         <input type="email" placeholder="Enter your email" className={`p-3 px-5 mr-2 ${darkMode ? 'bg-semiLight' : 'bg-lightGray'}  rounded-lg sm:mb-5`} />
