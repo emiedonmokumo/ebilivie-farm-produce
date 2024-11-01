@@ -13,6 +13,8 @@ const Login = () => {
     const navigate = useNavigate();
     const { darkMode } = useContext(ModeContext)
     const { currentUser, setCurrentUser } = useContext(AuthContext);
+    const [loading, setLoading] = useState(false);
+
 
     useEffect(()=>{
         if(currentUser.isLoggedIn == true) {
@@ -24,8 +26,14 @@ const Login = () => {
         email: '',
         password: '',
     })
+    const handleLoading = () =>{
+        setLoading(true);
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        setLoading(true)
 
         if(!user.email || !user.password) toast('All fields are required!')
         signInWithEmailAndPassword(auth, user.email, user.password)
@@ -48,7 +56,7 @@ const Login = () => {
 
     return (
         <div className={`mt-16 font-spartan`}>
-            <LoginForm action={handleSubmit} user={user} setUser={setUser} />
+            <LoginForm action={handleSubmit} user={user} setUser={setUser} handleClick={handleLoading} loading={loading} />
         </div>
     )
 }
