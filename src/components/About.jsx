@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 import { useContext } from "react"
-import ModeContext from "./ModeContext"
+import ModeContext from "../context/ModeContext"
 
-const Home = () => {
+const About = () => {
     const { darkMode } = useContext(ModeContext)
     return (
         <div className={`mt-16 font-spartan`}>
@@ -177,4 +177,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default About

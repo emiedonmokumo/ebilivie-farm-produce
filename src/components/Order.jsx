@@ -1,7 +1,7 @@
 import plans from "../config/plans"
 import { useContext, useState } from "react"
 import { useParams } from "react-router-dom"
-import ModeContext from "./ModeContext"
+import ModeContext from "../context/ModeContext"
 
 import { getFirestore, collection, addDoc } from 'firebase/firestore'
 import app from "../config/firebase"

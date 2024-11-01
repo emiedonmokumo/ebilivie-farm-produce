@@ -1,7 +1,7 @@
 import { getFirestore, collection, getDocs, doc, deleteDoc } from "firebase/firestore"
 import app from "../config/firebase"
 import { useState, useEffect, useContext } from "react"
-import ModeContext from "./ModeContext"
+import ModeContext from "../context/ModeContext"
 const db = getFirestore(app)
 
 

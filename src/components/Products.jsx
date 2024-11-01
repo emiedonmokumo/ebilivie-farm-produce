@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
-import ModeContext from "./ModeContext"
+import ModeContext from "../context/ModeContext"
 import plans from '../config/plans'
 
 const Products = () => {

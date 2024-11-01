@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import ModeContext from './ModeContext'
+import ModeContext from '../context/ModeContext'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
