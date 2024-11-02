@@ -7,7 +7,7 @@ import Products from './components/Products';
 import ModeProvider from './context/ModeProvider';
 import Order from './components/Order';
 import Admin from './components/Admin';
-import Login from './pages/login';
+import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import AuthProvider from './context/AuthProvider';
