@@ -5,19 +5,19 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   const { darkMode } = useContext(ModeContext)
   return (
-    <footer className={`${darkMode ? 'bg-OxfordBlue2 text-semiLight' : 'bg-semiLight text-oxfordBlue'} text-sm pt-12`}>
+    <footer className={`${darkMode ? 'bg-[#231F20] text-[#f2f8f2]' : 'bg-[#f2f8f2] text-[#263238]'} text-sm pt-12`}>
       <div className='p-5 md:px-12'>
         <div className="flex justify-evenly md:flex-col lg:items-center sm:flex-col">
           <div className='lg:w-60 mr-12'>
-            <h1 className='text-2xl font-semibold text-forestGreen'>Ebilivie Farm</h1>
+            <h1 className='text-2xl font-semibold text-[#008000]'>Ebilivie Farm</h1>
             <h5 className='mt-3'>High level experience in web design and development knowledge, producing quality work.</h5>
           </div>
           <div className=''>
             <div className="">
               <p className=''>Subscribe to stay tuned for new web design and latest updates. Let's do it!</p>
               <div className="sm:flex sm:flex-col sm:justify-center">
-                <input type="email" placeholder="Enter your email" className="p-2 px-4 mr-2 bg-lightGray rounded-lg mt-5 sm:mb-5" />
-                <button className="p-2 px-2 rounded-lg bg-forestGreen text-light">Get Started</button>
+                <input type="email" placeholder="Enter your email" className="p-2 px-4 mr-2 bg-[#c4c4c4] rounded-lg mt-5 sm:mb-5" />
+                <button className="p-2 px-2 rounded-lg bg-[#008000] text-[white]">Get Started</button>
               </div>
             </div>
           </div>
@@ -25,9 +25,9 @@ const Footer = () => {
             <div className='sm:my-5'>
               <h5 className='font-bold text-lg'>Follow us</h5>
               <div className='flex mt-3'>
-                <i className="bi bi-instagram text-semiLight p-2 px-3 rounded-full bg-forestGreen hover:bg-lightGreen"></i>
-                <i className="bi bi-facebook text-semiLight p-2 px-3 rounded-full mx-5 bg-forestGreen hover:bg-lightGreen"></i>
-                <i className="bi bi-twitter text-semiLight p-2 px-3 rounded-full bg-forestGreen hover:bg-lightGreen"></i>
+                <i className="bi bi-instagram text-[#f2f8f2] p-2 px-3 rounded-full bg-[#008000] hover:bg-[#23B123]"></i>
+                <i className="bi bi-facebook text-[#f2f8f2] p-2 px-3 rounded-full mx-5 bg-[#008000] hover:bg-[#23B123]"></i>
+                <i className="bi bi-twitter text-[#f2f8f2] p-2 px-3 rounded-full bg-[#008000] hover:bg-[#23B123]"></i>
               </div>
             </div>
             <div className='lg:mt-5'>

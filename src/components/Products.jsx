@@ -17,14 +17,14 @@ const Products = () => {
       </div>
       <div className="flex justify-between md:flex-col sm:flex-col mb-12">
       {plans.map(plan => (
-        <div key={plan.id} className="relative border-lightGray border hover:border-1 hover:border-lightGreen p-12 sm:p-5 rounded-lg m-3 text-center">
+        <div key={plan.id} className="relative border-[#c4c4c4] border hover:border-1 hover:border-[#23B123] p-12 sm:p-5 rounded-lg m-3 text-center">
           <div className="mb-12 sm:mb-16">
-            <h3 className="text-2xl font-bold py-2 text-forestGreen">{plan.name}</h3>
+            <h3 className="text-2xl font-bold py-2 text-[#008000]">{plan.name}</h3>
             <p className="text-lg">{plan.description}</p>
-            <p className="my-5 mt-8 text-2xl font-bold text-lightGray">{plan.size} Litres</p>
-            <h1 className={`text-2xl font-bold ${darkMode ? 'text-semiLight' : 'text-oxfordBlue'} mt-12 sm:my-5`}>₦{plan.price*plan.discount/100}</h1>
+            <p className="my-5 mt-8 text-2xl font-bold text-[#c4c4c4]">{plan.size} Litres</p>
+            <h1 className={`text-2xl font-bold ${darkMode ? 'text-[#f2f8f2]' : 'text-[#263238]'} mt-12 sm:my-5`}>₦{plan.price*plan.discount/100}</h1>
           </div>
-          <Link to={`/order/${plan.id}`} className="absolute bottom-0 left-0 right-0 hover:bg-forestGreen p-5 hover:text-light text-1xl font-bold rounded-lg border border-forestGreen">Order</Link>
+          <Link to={`/order/${plan.id}`} className="absolute bottom-0 left-0 right-0 hover:bg-[#008000] p-5 hover:text-white text-1xl font-bold rounded-lg border border-[#008000]">Order</Link>
         </div>
       ))}
       </div>
