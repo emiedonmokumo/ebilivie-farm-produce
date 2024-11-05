@@ -1,0 +1,163 @@
+[
+    {
+        "uid": 1,
+        "cropName": "Corn",
+        "cropVariety": "Sweet Corn",
+        "plantingDate": "2024-03-15",
+        "expectedHarvestDate": "2024-07-10",
+        "location": "Field 1 - North",
+        "growthStage": "Flowering",
+        "daysSincePlanting": 90,
+        "irrigationDetails": "Drip irrigation, twice a week",
+        "pestIncidents": "Aphids observed on lower leaves",
+        "treatmentLog": {
+            "treatmentType": "Insecticide",
+            "productName": "BioKill",
+            "applicationMethod": "Spray",
+            "quantityUsed": "500ml"
+        },
+        "treatmentApplied": "Insecticide spray applied",
+        "applicationDates": "2024-05-15, 2024-06-01",
+        "estimatedYield": 2500,
+        "actualYield": 2400,
+        "additionalNotes": "Observed steady growth; minimal pest activity"
+    },
+    {
+        "uid": 2,
+        "cropName": "Tomato",
+        "cropVariety": "Roma",
+        "plantingDate": "2024-04-01",
+        "expectedHarvestDate": "2024-06-20",
+        "location": "Greenhouse 3",
+        "growthStage": "Fruit development",
+        "daysSincePlanting": 80,
+        "irrigationDetails": "Sprinkler system, daily",
+        "pestIncidents": "None observed",
+        "treatmentLog": {
+            "treatmentType": "Fertilizer",
+            "productName": "PlantGro",
+            "applicationMethod": "Soil application",
+            "quantityUsed": "200g per plant"
+        },
+        "treatmentApplied": "Fertilizer applied",
+        "applicationDates": "2024-04-15, 2024-05-01",
+        "estimatedYield": 1500,
+        "actualYield": 1400,
+        "additionalNotes": "Good flowering observed; yield on track"
+    },
+    {
+        "uid": 3,
+        "cropName": "Wheat",
+        "cropVariety": "Hard Red",
+        "plantingDate": "2023-10-20",
+        "expectedHarvestDate": "2024-04-15",
+        "location": "Field 2 - East",
+        "growthStage": "Maturity",
+        "daysSincePlanting": 175,
+        "irrigationDetails": "Sprinkler, twice weekly",
+        "pestIncidents": "Rust fungus spots on leaves",
+        "treatmentLog": {
+            "treatmentType": "Fungicide",
+            "productName": "RustAway",
+            "applicationMethod": "Foliar spray",
+            "quantityUsed": "750ml"
+        },
+        "treatmentApplied": "Fungicide spray applied",
+        "applicationDates": "2024-01-10, 2024-02-20",
+        "estimatedYield": 4000,
+        "actualYield": 3900,
+        "additionalNotes": "Minor rust issue controlled; yield slightly below estimate"
+    },
+    {
+        "uid": 4,
+        "cropName": "Potato",
+        "cropVariety": "Russet",
+        "plantingDate": "2024-02-01",
+        "expectedHarvestDate": "2024-06-10",
+        "location": "Field 4 - South",
+        "growthStage": "Tuber formation",
+        "daysSincePlanting": 100,
+        "irrigationDetails": "Flood irrigation, weekly",
+        "pestIncidents": "Mild infestation of Colorado potato beetle",
+        "treatmentLog": {
+            "treatmentType": "Organic pesticide",
+            "productName": "EcoPest",
+            "applicationMethod": "Spray",
+            "quantityUsed": "300ml"
+        },
+        "treatmentApplied": "Pesticide spray applied",
+        "applicationDates": "2024-04-01, 2024-04-15",
+        "estimatedYield": 3500,
+        "actualYield": null,
+        "additionalNotes": "Pest under control; tuber growth on schedule"
+    },
+    {
+        "uid": 5,
+        "cropName": "Soybean",
+        "cropVariety": "Early Maturity",
+        "plantingDate": "2024-04-20",
+        "expectedHarvestDate": "2024-08-20",
+        "location": "Field 5 - East",
+        "growthStage": "Vegetative",
+        "daysSincePlanting": 40,
+        "irrigationDetails": "Rainfed",
+        "pestIncidents": "None observed",
+        "treatmentLog": {
+            "treatmentType": "Fertilizer",
+            "productName": "SoyBoost",
+            "applicationMethod": "Foliar feed",
+            "quantityUsed": "100ml per plant"
+        },
+        "treatmentApplied": "Fertilizer applied",
+        "applicationDates": "2024-05-05, 2024-05-20",
+        "estimatedYield": 1500,
+        "actualYield": null,
+        "additionalNotes": "Good rainfall aiding growth; no pest issues"
+    },
+    {
+        "uid": 6,
+        "cropName": "Strawberry",
+        "cropVariety": "Albion",
+        "plantingDate": "2024-03-10",
+        "expectedHarvestDate": "2024-05-20",
+        "location": "Greenhouse 2",
+        "growthStage": "Flowering",
+        "daysSincePlanting": 60,
+        "irrigationDetails": "Drip irrigation, daily",
+        "pestIncidents": "Spider mites on some plants",
+        "treatmentLog": {
+            "treatmentType": "Insecticide",
+            "productName": "MiteAway",
+            "applicationMethod": "Spray",
+            "quantityUsed": "150ml"
+        },
+        "treatmentApplied": "Insecticide spray applied",
+        "applicationDates": "2024-04-01, 2024-04-15",
+        "estimatedYield": 1200,
+        "actualYield": null,
+        "additionalNotes": "Early flowers indicate high yield potential"
+    },
+    {
+        "uid": 7,
+        "cropName": "Rice",
+        "cropVariety": "Basmati",
+        "plantingDate": "2023-12-15",
+        "expectedHarvestDate": "2024-05-25",
+        "location": "Field 3 - West",
+        "growthStage": "Panicle initiation",
+        "daysSincePlanting": 120,
+        "irrigationDetails": "Paddy field, irrigated weekly",
+        "pestIncidents": "Blast disease on some plants",
+        "treatmentLog": {
+            "treatmentType": "Fungicide",
+            "productName": "BlastAway",
+            "applicationMethod": "Foliar spray",
+            "quantityUsed": "600ml"
+        },
+        "treatmentApplied": "Fungicide applied",
+        "applicationDates": "2024-03-01, 2024-03-15",
+        "estimatedYield": 5000,
+        "actualYield": 1000,
+        "additionalNotes": "Disease managed well; potential for good yield"
+    }
+]

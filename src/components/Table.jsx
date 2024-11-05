@@ -1,42 +1,42 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Table = () => {
-    const columns = ['Name', 'Email', 'Role', 'Status'];
-    const data = [
-        { name: 'John Doe', email: 'johndoe@example.com', role: 'Admin', status: 'Active' },
-        { name: 'Jane Smith', email: 'janesmith@example.com', role: 'Editor', status: 'Inactive' },
-        { name: 'Alice Johnson', email: 'alicejohnson@example.com', role: 'Contributor', status: 'Active' },
-    ];
-
+const Table = ({ columns, data }) => {
     return (
-        <div className='overflow-x-auto'>
-            <table className="w-full text-left shadow-xl">
-                <thead className=''>
-                    <tr className='text-left'>
+        <div className="overflow-x-auto">
+            <table className="min-w-full text-left shadow-xl border-collapse">
+                <thead>
+                    <tr className="bg-green-100 border-b">
                         {columns.map((column) => (
-                            <th
-                                key={column}
-                                className=""
-                            >
+                            <th key={column} className="px-6 py-3 text-sm font-semibold text-gray-700">
                                 {column}
                             </th>
                         ))}
-                        <th>Action</th>
                     </tr>
                 </thead>
-                <tbody className=''>
+                <tbody>
                     {data.map((row, rowIndex) => (
-                        <tr key={rowIndex} className="hover:bg-gray-100 hover:shadow-sm hover:shadow-white">
-                            <td className="py-4 pb-10">{row.name}</td>
-                            <td className="py-4 pb-10">{row.email}</td>
-                            <td className="py-4 pb-10">{row.role}</td>
-                            <td className="py-4 pb-10">
-                                <span className={row.status === 'Active' ? 'text-green-500 font-semibold' : 'text-red-500 font-semibold'}>
-                                    {row.status}
-                                </span>
+                        <tr
+                            key={rowIndex}
+                            className="hover:bg-green-50 hover:shadow-md transition-shadow duration-200"
+                        >
+                            <td className="px-6 py-4 text-sm text-gray-800 border-b">
+                                <Link to={`/crop/${row.uid}`} className="hover:text-green-500">{row.cropName}</Link>
                             </td>
-                            <td className='py-4 pb-10'>
-                                <button className='bg-[green] hover:bg-[darkGreen] text-[white] rounded-md p-3'>Delete</button>
+                            <td className="px-6 py-4 text-sm text-gray-800 border-b">
+                                <Link to={`/crop/${row.uid}`} className="hover:text-green-500">{row.cropVariety}</Link>
+                            </td>
+                            <td className="px-6 py-4 text-sm text-gray-800 border-b">
+                                <Link to={`/crop/${row.uid}`} className="hover:text-green-500">{row.growthStage}</Link>
+                            </td>
+                            <td className="px-6 py-4 text-sm text-gray-800 border-b">
+                                <Link to={`/crop/${row.uid}`} className="hover:text-green-500">{row.estimatedYield}</Link>
+                            </td>
+                            <td className="px-6 py-4 text-sm text-gray-800 border-b">
+                                <Link to={`/crop/${row.uid}`} className="hover:text-green-500">{row.actualYield}</Link>
+                            </td>
+                            <td className="px-6 py-4 text-sm text-gray-800 border-b">
+                                <Link to={`/crop/${row.uid}`} className="hover:text-green-500">{row.expectedHarvestDate}</Link>
                             </td>
                         </tr>
                     ))}
