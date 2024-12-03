@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex justify-evenly md:flex-col lg:items-center sm:flex-col">
           <div className='lg:w-60 mr-12'>
             <h1 className='text-2xl font-semibold text-[#008000]'>Ebilivie Farm</h1>
-            <h5 className='mt-3'>High level experience in web design and development knowledge, producing quality work.</h5>
+            <h5 className='mt-3'>Maximize your yield with expert crop management solutions.</h5>
           </div>
           <div className=''>
             <div className="">
@@ -47,7 +47,7 @@ const Footer = () => {
             <ul className='flex justify-evenly md:text-xs md:flex-row'>
               <li><Link to={'#'}>Privacy Policy</Link></li>
               <li><Link to={'#'} className='mx-3'>Sales and Refund</Link></li>
-              <li><Link to={'/admin'} className=''>Admin</Link></li>
+              {/* <li><Link to={'/admin'} className=''>Admin</Link></li> */}
             </ul>
           </div>
         </div>

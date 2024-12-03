@@ -9,14 +9,9 @@ import Order from './components/Order';
 import Admin from './components/Admin';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Dashboard from './pages/Dashboard';
 import AuthProvider from './context/AuthProvider';
 import ProtectedRoute from './context/ProtectedRoute';
-import Animals from './pages/Animals';
-import Crops from './pages/Crops';
-import Task from './pages/Task';
-import NewCrop from './pages/NewCrop';
-import Crop from './pages/Crop';
+
 
 function App() {
   return (
@@ -53,16 +48,6 @@ function AppContent() {
           <Route path='/about' element={<About />} />
           {/* Uncomment if you want to use the Admin route */}
           {/* <Route path='/admin' element={<Admin />} /> */}
-
-          {/* Protected Route for Dashboard */}
-          <Route element={<ProtectedRoute />}>
-            <Route path='/dashboard' element={<Dashboard />} />
-            <Route path='/newcrop' element={<NewCrop />} />
-            <Route path='/animal' element={<Animals />} />
-            <Route path='/crop' element={<Crops />} />
-            <Route path='/crop/:id' element={<Crop />} />
-            <Route path='/task' element={<Task />} />
-          </Route>
         </Routes>
       </div>
       {/* Conditionally render Footer */}
